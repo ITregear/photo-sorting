@@ -1,3 +1,15 @@
+"""
+Basic script used to sort photos
+I had a dump of roughly 15,000 photos in a single directory
+I had hand sorted the majority into albums
+There were roughly 4000 left that did not belong in a specific album
+I wanted these to be automatically sorted into new albums, grouped by year
+This program checks every photo in the original folder to see if it has already been sorted into any album
+in the destination folder
+If it hasn't, it is copied across to a new album, based on its creation date
+"""
+
+
 import os
 import time
 import shutil
